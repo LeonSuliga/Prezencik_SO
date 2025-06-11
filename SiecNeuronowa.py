@@ -58,7 +58,15 @@ def main():
 
     predictions = model.predict(X_test)
     mse = mean_squared_error(y_test, predictions)
-    print(f"\nMean Squared Error: {mse:.4f}\n")
+
+    y_tesy_binary = (np.array(y_test) >= 0.5).astype(int)
+    predictions_binary = (np.array(predictions) >= 0.5).astype(int)
+
+    correct_predictions = np.sum(predictions_binary == y_tesy_binary)
+
+    print('\n')
+    print(f'Correct predictions: {correct_predictions} out of {len(y_test)} ({correct_predictions/len(y_test)*100}%)')
+    print(f"Mean Squared Error: {mse:.4f}\n")
 
     print("Przykładowe decyzje testowe:")
     for i in range(min(5, len(states_test))):
