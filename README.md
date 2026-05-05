@@ -1,2 +1,1 @@
-tu masz te grę jak chciesz ogranąc o co chodzi :https://www.youtube.com/watch?v=eH-hgdnCVnY
-ja ją mam irl więc mogę przynieść w jakiś dzień jak bedziesz chciał zobaczyć i zagrać żeby lepiej ogarnąć 
+Projekt ma na celu skalibrowanie sieci neuronowej aby na podstawei informacji dostępnych na planszy podejmowała najlepszą możliwą decyzję w grze Prezencik. (Decycja to czy wziąć kartę czy nie)
